@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Card, CardBody, CardHeader } from '../../common/Card';
-import Truncate from '../../common/Truncate';
-import { AppContainer } from '../AppContainer';
-import { SectionHeader } from './SectionHeader';
-import permissionlessIcon from '../../../assets/images/dot_permissionless.svg';
-import decentralizedIcon from '../../../assets/images/dot_decentralized.svg';
-import flexibleIcon from '../../../assets/images/dot_flexible.svg';
+import React, { useState } from "react";
+import { Card, CardBody, CardHeader } from "../../common/Card";
+import Truncate from "../../common/Truncate";
+import { AppContainer } from "../AppContainer";
+import { SectionHeader } from "./SectionHeader";
+import permissionlessIcon from "../../../assets/images/dot_permissionless.svg";
+import decentralizedIcon from "../../../assets/images/dot_decentralized.svg";
+import flexibleIcon from "../../../assets/images/dot_flexible.svg";
 
 const aboutText = `We are the community's launchpad where projects are free to innovate, experiment and launch their project in a purely
                 permissionless ecosystem with no gatekeepers and no whales. We are the breath of fresh air in the world of blockchain launchpads. 
@@ -21,19 +21,17 @@ export const AboutSection = () => {
       className="w-full"
       style={{
         backgroundImage:
-          'linear-gradient(175deg, #101123 100%, #040710 calc(100% + 2px)) ',
-      }}
-    >
+          "linear-gradient(175deg, #101123 100%, #040710 calc(100% + 2px)) ",
+      }}>
       <AppContainer>
         <div className="py-28">
           <div className="text-center mx-auto max-w-3xl">
-            <SectionHeader>WHAT MAKES DOTLAUNCH UNIQUE ?</SectionHeader>
+            <SectionHeader>WHAT MAKES SafeLAUNCH UNIQUE ?</SectionHeader>
           </div>
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="max-w-4xl mx-auto text-center mb-10"
-          >
+            className="max-w-4xl mx-auto text-center mb-10">
             {!isReadMore ? (
               <Truncate
                 text={aboutText}
@@ -47,9 +45,8 @@ export const AboutSection = () => {
             )}
             <button
               className="text-base font-semibold px-5 py-3 mt-5 text-custom-dark-primaryBlue"
-              onClick={() => setIsReadMore(!isReadMore)}
-            >
-              {!isReadMore ? 'Read More' : 'Read Less'}
+              onClick={() => setIsReadMore(!isReadMore)}>
+              {!isReadMore ? "Read More" : "Read Less"}
               {!isReadMore ? (
                 <i className="las la-arrow-right ml-3"></i>
               ) : (

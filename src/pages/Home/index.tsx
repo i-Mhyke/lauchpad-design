@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   HeroSection,
   FeaturesSection,
@@ -7,9 +7,9 @@ import {
   PartnersSection,
   AboutSection,
   RoadMap,
-} from '../../components/layout/LandingPage';
-import NavBarComponent from '../../components/layout/Navbar';
-import { Helmet } from 'react-helmet';
+} from "../../components/layout/LandingPage";
+import NavBarComponent from "../../components/layout/Navbar";
+import { Helmet } from "react-helmet";
 
 const seoData = {
   title: `Shocking article on crypto launchpads reveals 7 things you should know
@@ -31,7 +31,7 @@ const Home = (): React.ReactElement => {
         <meta name="og:description" content={seoData.description} />
         <meta name="og:type" content="website" />
         <meta name="og:url" content={window.location.href} />
-        <meta name="og:site_name" content="DotLaunch" />
+        <meta name="og:site_name" content="SafeLaunch" />
       </Helmet>
       <NavBarComponent />
       <HeroSection />

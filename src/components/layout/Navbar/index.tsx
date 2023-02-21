@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { AppContainer } from '../AppContainer';
-import Hamburger from 'hamburger-react';
-import { NavMenu, ToggleButton } from './styles';
-import { SecondaryButton } from '../../common/Button';
-import { Link } from 'react-router-dom';
-import ScrollToHref from '../../common/ScrollToHref';
+import React, { useState } from "react";
+import { AppContainer } from "../AppContainer";
+import Hamburger from "hamburger-react";
+import { NavMenu, ToggleButton } from "./styles";
+import { SecondaryButton } from "../../common/Button";
+import { Link } from "react-router-dom";
+import ScrollToHref from "../../common/ScrollToHref";
 
 const NavLinkItems = ({
   title,
@@ -20,8 +20,7 @@ const NavLinkItems = ({
       <a
         className="navLink-underline app-font"
         href={`#${navLink}`}
-        onClick={setNavbar}
-      >
+        onClick={setNavbar}>
         {title}
       </a>
     </ScrollToHref>
@@ -31,11 +30,11 @@ const NavLinkItems = ({
 const NavBarComponent = (): React.ReactElement => {
   const [navbarOpen, setNavbar] = useState(false);
   const [links] = useState([
-    { link: '', title: 'Home' },
-    { link: 'about', title: 'About' },
-    { link: 'features', title: 'Features' },
-    { link: 'partners', title: 'Partners' },
-    { link: 'roadmap', title: 'Roadmap' },
+    { link: "", title: "Home" },
+    { link: "about", title: "About" },
+    { link: "features", title: "Features" },
+    { link: "partners", title: "Partners" },
+    { link: "roadmap", title: "Roadmap" },
   ]);
   const onSetNavbar = (navState: boolean) => {
     setNavbar(navState);
@@ -48,7 +47,7 @@ const NavBarComponent = (): React.ReactElement => {
           <div>
             {/* <img className="w-36 md:w-52" src={logo} alt="Planet Of Ape" /> */}
             <h3 className="font-bold text-2xl">
-              Dot<span className="text-custom-light-primaryBlue">Launch</span>
+              Safe<span className="text-custom-light-primaryBlue">Launch</span>
             </h3>
           </div>
           <NavMenu mobileOpen={navbarOpen}>
